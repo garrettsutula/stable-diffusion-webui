@@ -39,6 +39,7 @@ parser.add_argument("--cors-origins", type=str, help="Allowed CORS origin(s) in 
 parser.add_argument("--cors-regex", type=str, help="Allowed CORS origin(s) in the form of a single regular expression", default=None)
 parser.add_argument("--tls-keyfile", type=str, help="Partially enables TLS, requires --tls-certfile to fully function", default=None)
 parser.add_argument("--tls-certfile", type=str, help="Partially enables TLS, requires --tls-keyfile to fully function", default=None)
+parser.add_argument("--tls-verify", type=bool, help="Enables the use of self-signed certificates when set to False", default=None)
 parser.add_argument("--server-name", type=str, help="Sets hostname of server", default=None)
 parser.add_argument("--no-hashing", action='store_true', help="Disable sha256 hashing of checkpoints", default=False)
 parser.add_argument("--no-download-sd-model", action='store_true', help="Disable download of default model even if no model is found", default=False)
